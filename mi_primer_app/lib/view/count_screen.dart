@@ -9,10 +9,11 @@ class ContadorScreen extends StatefulWidget {
 }
 
 class _ContadorState extends State<ContadorScreen> {
+  int count = 10;
   @override
   Widget build(BuildContext context) {
     const siseText = TextStyle(fontSize: 24);
-    int count = 10;
+
     return Scaffold(
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 241, 222, 222),
@@ -36,6 +37,7 @@ class _ContadorState extends State<ContadorScreen> {
             child: const Icon(Icons.access_alarm),
             onPressed: () {
               count++;
+              setState(() {});
               showMessage();
             }));
   }
