@@ -38,11 +38,6 @@ class _ContadorState extends State<ContadorScreen> {
             onPressed: () {
               count++;
               setState(() {});
-              showMessage();
             }));
-  }
-
-  void showMessage() {
-    print('hola');
   }
 }
