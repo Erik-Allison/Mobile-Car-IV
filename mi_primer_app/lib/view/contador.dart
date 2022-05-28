@@ -10,6 +10,21 @@ class Contador extends StatefulWidget {
 
 class _ContadorState extends State<Contador> {
   int count = 10;
+  void increment() {
+    count++;
+    setState(() {});
+  }
+
+  void decrement() {
+    count--;
+    setState(() {});
+  }
+
+  void restart() {
+    count = 0;
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     const siseText = TextStyle(fontSize: 24);
@@ -32,26 +47,35 @@ class _ContadorState extends State<Contador> {
               )
             ]),
       ),
-      floatingActionButton: Row(children: <Widget>[
-        FloatingActionButton(
-            child: const Icon(Icons.remove),
-            onPressed: () {
-              count--;
-              setState(() {});
-            }),
-        FloatingActionButton(
-            child: const Icon(Icons.replay),
-            onPressed: () {
-              count = 0;
-              setState(() {});
-            }),
-        FloatingActionButton(
-            child: const Icon(Icons.add),
-            onPressed: () {
-              count++;
-              setState(() {});
-            }),
-      ]),
+      floatingActionButton: CustomFloatingActionButtonLocation(
+        increaseFn: increment,
+        decreaseFn: decrement,
+        restarFn: restart,
+      ),
     );
+  }
+}
+
+class CustomFloatingActionButtonLocation extends StatelessWidget {
+  final Function increaseFn;
+  final Function decreaseFn;
+  final Function restarFn;
+  const CustomFloatingActionButtonLocation({
+    Key? key,
+    required this.increaseFn,
+    required this.decreaseFn,
+    required this.restarFn,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(children: <Widget>[
+      FloatingActionButton(
+          child: const Icon(Icons.remove), onPressed: () => decreaseFn()),
+      FloatingActionButton(
+          child: const Icon(Icons.replay), onPressed: () => restarFn()),
+      FloatingActionButton(
+          child: const Icon(Icons.add), onPressed: () => increaseFn()),
+    ]);
   }
 }
