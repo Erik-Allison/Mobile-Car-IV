@@ -5,124 +5,54 @@ class ListView1 extends StatelessWidget {
 
   final List<Map<String, dynamic>> _cars = [
     {
-      "image": "https://m.media-amazon.com/images/I/51IOiivl-AL._AC_.jpg",
-      "name": "Metal Gear Solid"
+      "image":
+          'https://www.lavanguardia.com/files/og_thumbnail/uploads/2021/09/02/6130d99519f60.png',
+      "name": 'Roblox',
     },
     {
       "image":
-          "https://as01.epimg.net/meristation/imagenes/2015/04/30/reportaje/1430373600_448371_1532453664_sumario_normal.png",
-      "name": "Silent Hill"
+          'https://articles-images.sftcdn.net/wp-content/uploads/sites/2/2015/10/silent1.jpg',
+      "name": 'Silent Hills',
     },
     {
       "image":
-          "https://store-images.s-microsoft.com/image/apps.43891.13835473807186336.5cf6bf6e-e12d-494f-a7ea-420b2c6b1a23.0c62e5ab-ea75-4447-84a9-67cd7c26e92f",
-      "name": "Call Of Duty: Warzone"
+          'https://media.vandal.net/i/1200x630/11-2021/2021111012201145_1.jpg',
+      "name": 'Forza Horizon 5',
     },
     {
       "image":
-          "https://http2.mlstatic.com/D_NQ_NP_762835-MLB26829118476_022018-O.jpg",
-      "name": "Resident Evil 2"
+          'https://compass-ssl.xbox.com/assets/9c/94/9c944d9c-7ef1-4b46-9f68-9b02966d3993.jpg?n=Halo-Infinite_GLP-Page-Hero-0_1083x609.jpg',
+      "name": 'Halo Infinite',
     },
     {
       "image":
-          "https://lastfm.freetls.fastly.net/i/u/770x0/ccb84d017d1d6499b48b84502dd5716b.jpg",
-      "name": "Doom"
-    },
-    {
-      "image": "https://m.media-amazon.com/images/I/51IOiivl-AL._AC_.jpg",
-      "name": "Metal Gear Solid"
+          'https://compass-ssl.xbox.com/assets/9c/94/9c944d9c-7ef1-4b46-9f68-9b02966d3993.jpg?n=Halo-Infinite_GLP-Page-Hero-0_1083x609.jpg',
+      "name": 'Halo Infinite',
     },
     {
       "image":
-          "https://as01.epimg.net/meristation/imagenes/2015/04/30/reportaje/1430373600_448371_1532453664_sumario_normal.png",
-      "name": "Silent Hill"
+          'https://www.lavanguardia.com/files/og_thumbnail/uploads/2021/09/02/6130d99519f60.png',
+      "name": 'Roblox',
     },
     {
       "image":
-          "https://store-images.s-microsoft.com/image/apps.43891.13835473807186336.5cf6bf6e-e12d-494f-a7ea-420b2c6b1a23.0c62e5ab-ea75-4447-84a9-67cd7c26e92f",
-      "name": "Call Of Duty: Warzone"
+          'https://articles-images.sftcdn.net/wp-content/uploads/sites/2/2015/10/silent1.jpg',
+      "name": 'Silent Hills',
     },
     {
       "image":
-          "https://http2.mlstatic.com/D_NQ_NP_762835-MLB26829118476_022018-O.jpg",
-      "name": "Resident Evil 2"
+          'https://media.vandal.net/i/1200x630/11-2021/2021111012201145_1.jpg',
+      "name": 'Forza Horizon 5',
     },
     {
       "image":
-          "https://lastfm.freetls.fastly.net/i/u/770x0/ccb84d017d1d6499b48b84502dd5716b.jpg",
-      "name": "Doom"
-    },
-    {
-      "image": "https://m.media-amazon.com/images/I/51IOiivl-AL._AC_.jpg",
-      "name": "Metal Gear Solid"
+          'https://compass-ssl.xbox.com/assets/9c/94/9c944d9c-7ef1-4b46-9f68-9b02966d3993.jpg?n=Halo-Infinite_GLP-Page-Hero-0_1083x609.jpg',
+      "name": 'Halo Infinite',
     },
     {
       "image":
-          "https://as01.epimg.net/meristation/imagenes/2015/04/30/reportaje/1430373600_448371_1532453664_sumario_normal.png",
-      "name": "Silent Hill"
-    },
-    {
-      "image":
-          "https://store-images.s-microsoft.com/image/apps.43891.13835473807186336.5cf6bf6e-e12d-494f-a7ea-420b2c6b1a23.0c62e5ab-ea75-4447-84a9-67cd7c26e92f",
-      "name": "Call Of Duty: Warzone"
-    },
-    {
-      "image":
-          "https://http2.mlstatic.com/D_NQ_NP_762835-MLB26829118476_022018-O.jpg",
-      "name": "Resident Evil 2"
-    },
-    {
-      "image":
-          "https://lastfm.freetls.fastly.net/i/u/770x0/ccb84d017d1d6499b48b84502dd5716b.jpg",
-      "name": "Doom"
-    },
-    {
-      "image": "https://m.media-amazon.com/images/I/51IOiivl-AL._AC_.jpg",
-      "name": "Metal Gear Solid"
-    },
-    {
-      "image":
-          "https://as01.epimg.net/meristation/imagenes/2015/04/30/reportaje/1430373600_448371_1532453664_sumario_normal.png",
-      "name": "Silent Hill"
-    },
-    {
-      "image":
-          "https://store-images.s-microsoft.com/image/apps.43891.13835473807186336.5cf6bf6e-e12d-494f-a7ea-420b2c6b1a23.0c62e5ab-ea75-4447-84a9-67cd7c26e92f",
-      "name": "Call Of Duty: Warzone"
-    },
-    {
-      "image":
-          "https://http2.mlstatic.com/D_NQ_NP_762835-MLB26829118476_022018-O.jpg",
-      "name": "Resident Evil 2"
-    },
-    {
-      "image":
-          "https://lastfm.freetls.fastly.net/i/u/770x0/ccb84d017d1d6499b48b84502dd5716b.jpg",
-      "name": "Doom"
-    },
-    {
-      "image": "https://m.media-amazon.com/images/I/51IOiivl-AL._AC_.jpg",
-      "name": "Metal Gear Solid"
-    },
-    {
-      "image":
-          "https://as01.epimg.net/meristation/imagenes/2015/04/30/reportaje/1430373600_448371_1532453664_sumario_normal.png",
-      "name": "Silent Hill"
-    },
-    {
-      "image":
-          "https://store-images.s-microsoft.com/image/apps.43891.13835473807186336.5cf6bf6e-e12d-494f-a7ea-420b2c6b1a23.0c62e5ab-ea75-4447-84a9-67cd7c26e92f",
-      "name": "Call Of Duty: Warzone"
-    },
-    {
-      "image":
-          "https://http2.mlstatic.com/D_NQ_NP_762835-MLB26829118476_022018-O.jpg",
-      "name": "Resident Evil 2"
-    },
-    {
-      "image":
-          "https://lastfm.freetls.fastly.net/i/u/770x0/ccb84d017d1d6499b48b84502dd5716b.jpg",
-      "name": "Doom"
+          'https://compass-ssl.xbox.com/assets/9c/94/9c944d9c-7ef1-4b46-9f68-9b02966d3993.jpg?n=Halo-Infinite_GLP-Page-Hero-0_1083x609.jpg',
+      "name": 'Halo Infinite',
     },
   ];
 
@@ -137,7 +67,11 @@ class ListView1 extends StatelessWidget {
             itemBuilder: (context, index) {
               return ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: Image.network(_cars[index]["image"]!).image,
+                  backgroundImage: Image.network(
+                    _cars[index]["image"]!,
+                    errorBuilder: (context, error, stackTrace) =>
+                        SizedBox.shrink(),
+                  ).image,
                 ),
                 title: Text(_cars[index]["name"]!),
                 onTap: () => showDialog<String>(
