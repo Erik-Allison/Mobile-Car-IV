@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ListView1 extends StatelessWidget {
-  ListView1({Key? key}) : super(key: key);
+class ListView1 extends StatefulWidget {
+  const ListView1({Key? key}) : super(key: key);
 
+  @override
+  State<ListView1> createState() => _ListView1State();
+}
+
+class _ListView1State extends State<ListView1> {
   final List<Map<String, dynamic>> _cars = [
     {
       "image":
@@ -59,18 +64,18 @@ class ListView1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown[50],
         appBar: AppBar(
-          title: const Text("Marcas de Carro"),
+          backgroundColor: Colors.green[400],
+          title: const Text("Beer List"),
         ),
         body: ListView.builder(
             itemCount: _cars.length,
             itemBuilder: (context, index) {
               return ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: Image.network(
-                    _cars[index]["image"]!,
-                    errorBuilder: (context, error, stackTrace) =>
-                        SizedBox.shrink(),
+                  backgroundImage: Image.network(_cars[index]["image"]!,errorBuilder: (context, error, stackTrace) =>
+                    const SizedBox.shrink(),
                   ).image,
                 ),
                 title: Text(_cars[index]["name"]!),

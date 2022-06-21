@@ -23,7 +23,7 @@ class Home extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.brown[100],
       body: Container(
         alignment: Alignment.center,
         child: Column(
